@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+nav input {
+    margin-right: 1rem;
+    border-radius: 6px;
+    height: 44px;
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    width: 300px !important;
+    height: 210px;
+    margin-left: 40% !important;
+    margin-top: 10rem;
+    background: #d7e5ffc7;
+    border-radius: 1rem;
+    box-shadow: 0 0.1rem 2rem rgba(133, 82, 82, 0.1);
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info {
+    margin-top: 3rem;
+}
+
+.info #location {
+    font-weight: normal;
+}
+
+.info #date {
+    font-size: 11px;
+}
+
+.info #temp {
+    position: absolute;
+    top: 23rem;
+    left: 37rem;
+}
+
+.weatherCon .fa, .fas {
+    color: #eccc68;
+    position: relative;
+    top: 12px;
+    left: 5rem;
+    font-size: 3rem;
+    animation: sun 3s linear infinite alternate;
+}
+
+@keyframes sun {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
