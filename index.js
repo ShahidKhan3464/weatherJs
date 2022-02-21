@@ -21,7 +21,7 @@ searchBtn.addEventListener('click', () => {
 // Function to get the temperature of given city
 const getTemp = async (city) => {
     if (city == undefined) {
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=peshawar&appid=b4ba5cab1e7cf8891ffad0bc01bc6888`
+        let url = `http://api.openweathermap.org/data/2.5/weather?q=peshawar&appid=${process.env.MY_WeatherId}`
         let data = await fetch(url)
         let res = await data.json()
         let arr = [res]
